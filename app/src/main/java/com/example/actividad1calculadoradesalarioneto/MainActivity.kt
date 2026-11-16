@@ -365,19 +365,17 @@ class MainActivity : ComponentActivity() {
                 .padding(16.dp)) {
             Text("RESULTADOS")
             Spacer(modifier = Modifier.height(16.dp))
-            Text("Salario bruto: ${calculosRecibidos.salarioBruto}")
+            Text("Salario bruto: ${"%.2f".format(calculosRecibidos.salarioBruto)}")
             Spacer(modifier = Modifier.height(16.dp))
-            Text("Salario neto: ${calculosRecibidos.salarioNetoAnual}")
+            Text("Salario neto: ${"%.2f".format(calculosRecibidos.salarioNetoAnual)}")
             Spacer(modifier = Modifier.height(16.dp))
-            Text("Salario neto por paga: ${calculosRecibidos.salarioNetoPorPaga}")
+            Text("Salario neto por paga: ${"%.2f".format(calculosRecibidos.salarioNetoPorPaga)}")
             Spacer(modifier = Modifier.height(16.dp))
-            Text("Retenciones de IRPF: ${calculosRecibidos.retencionIrpf}")
+            Text("Retenciones de IRPF: ${"%.2f".format(calculosRecibidos.retencionIrpf)}")
             Spacer(modifier = Modifier.height(16.dp))
-            Text("Posibles deducciones: ${calculosRecibidos.ahorroPorReducciones}")
+            Text("Posibles deducciones: ${"%.2f".format(calculosRecibidos.ahorroPorReducciones)}")
 
         }
-
-
     }
 
     @Preview(showBackground = true)
